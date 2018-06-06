@@ -89,8 +89,8 @@ body{
 
 
 .content{
-    width: 250px;
-    height: 187px;
+    width: 300;
+    height: 224px;
     box-shadow: 0px 1px 3px black;
     border-radius: 0px;
     overflow: hidden;
@@ -121,6 +121,7 @@ body{
     align-items: center;
     opacity: 0;
     animation: fadein 1s ease 1.5s forwards;
+    font-size: 10pt;
     span{
         width: 50%;
         display: flex;
