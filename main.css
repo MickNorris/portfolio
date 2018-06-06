@@ -137,6 +137,31 @@ body {
   justify-content: center;
 }
 
+.contact-wrapper {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.svg-wrapper {
+  width: 30px;
+  height: 30px;
+  margin: 0px 50px;
+  fill: #4f4f4f;
+  transition: all ease 0.3s;
+}
+
+.svg-wrapper:hover {
+  fill: #2679ff;
+}
+
+.svg-wrapper svg {
+  width: 100%;
+}
+
 @keyframes fadein {
   from {
     transform: translateY(10px);
