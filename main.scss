@@ -1,5 +1,6 @@
 *{
     font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
 }
 
 body,html{
@@ -40,7 +41,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: fadein 1s ease 0s;
+    opacity: 0;
+    animation: fadein 1s ease 0s forwards;
     nav{
         width: 100%;
         margin: 0px 10px;
@@ -63,7 +65,7 @@ body{
             right: 0;
             float: right;
             span{
-                margin: 10px;
+                //margin: 10px;
                 transition: all ease 0.3s;
                 &:hover{
                     color: #2679ff;
@@ -86,7 +88,7 @@ body{
     width: 100%;
     height: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-flow: row wrap;
 }
 
@@ -205,10 +207,15 @@ body{
 
 .design-page{
     width: 65%;
+    display: flex;
+    flex-direction: column;
+    div{
+        animation: fadein 1s ease 0.5s forwards;
+    }
     .image-wrapper{
         opacity: 0;
-        animation: fadein 1s ease 0.5s forwards;
-        border: 4px solid white;
+        //border: 4px solid white;
+        box-sizing: content-box;
         box-shadow: 1px 0px 7px black;
         display: flex;
         align-items: center;
@@ -218,11 +225,21 @@ body{
         overflow: hidden;
     }
     .title-wrapper{
-        margin-top: 30px;
+        margin-top: 40px;
         opacity: 0;
         animation: fadein 1s ease 0.6s forwards;
-        font-size: 20px;
+        font-size: 20pt;
     }
+    
+
+    .description-wrapper{
+        font-size: 12pt;
+    }
+
+    .url-wrapper{
+        font-size: 12pt;
+    }
+
     img{
         width: 100%;
         height: auto;
