@@ -1,0 +1,13 @@
+{% include head.html %}
+
+
+<div class="design-page">
+    {% include header.html %}
+    <div class="image-wrapper">
+            <img src="{{page.thumbnail}}"/>
+    </div>
+    <div class="title-wrapper">{{page.title}}</div>
+    <div class="separator"></div>
+    <div>{{content}}</div>
+    <div>{{page.URL}}</div>
+</div>

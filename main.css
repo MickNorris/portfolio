@@ -11,6 +11,8 @@ body, html {
 body {
   display: flex;
   justify-content: center;
+  width: 100vw;
+  height: 100vh;
 }
 
 .home-wrapper {
@@ -42,13 +44,21 @@ body {
   margin: 0px 10px;
 }
 
-.header nav span {
-  color: black;
-  font-size: 10pt;
-}
-
 .header nav .name {
   float: left;
+  padding: 0;
+  margin: 0;
+  margin: 0px;
+}
+
+.header nav .name span {
+  color: black;
+  font-size: 10pt;
+  transition: all ease 0.3s;
+}
+
+.header nav .name span:hover {
+  color: #2679ff;
 }
 
 .header nav .links {
@@ -65,7 +75,7 @@ body {
   color: #2679ff;
 }
 
-.header nav .links a {
+.header nav a {
   text-decoration: none;
   color: black;
 }
@@ -188,6 +198,35 @@ body {
   height: 600px;
   border: 3px solid white;
   box-shadow: 1px 0px 7px black;
+}
+
+.design-page {
+  width: 65%;
+}
+
+.design-page .image-wrapper {
+  opacity: 0;
+  animation: fadein 1s ease 0.5s forwards;
+  border: 4px solid white;
+  box-shadow: 1px 0px 7px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+}
+
+.design-page .title-wrapper {
+  margin-top: 30px;
+  opacity: 0;
+  animation: fadein 1s ease 0.6s forwards;
+  font-size: 20px;
+}
+
+.design-page img {
+  width: 100%;
+  height: auto;
 }
 
 @keyframes fadein {
