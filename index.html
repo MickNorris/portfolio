@@ -3,8 +3,8 @@ layout: default
 title: home
 ---
 
-<div class="fullscreen">
-    <img src=""/>
+<div class="fullscreen-logo">
+    <img src="" alt=""/>
 </div>
 
 <div class="home-wrapper">
@@ -28,7 +28,7 @@ title: home
         {% endif %} {% endfor %}
     </div>
     <div class="seperator"></div>
-    <div class=" logos-wrapper content-wrapper" id="logo">
+    <div class="logos-wrapper content-wrapper" id="logo">
          {% for logo in site.posts %} {% if logo.layout == "logo" %}
             <div class="logo-wrapper content">
                     <img src="{{logo.thumbnail}}" alt="logo">
