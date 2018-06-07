@@ -3,6 +3,10 @@ layout: default
 title: home
 ---
 
+<div class="fullscreen">
+    <img src=""/>
+</div>
+
 <div class="home-wrapper">
     <div class="header">
         <nav>
@@ -17,46 +21,19 @@ title: home
         </nav>
     </div>
     <div class="designs-wrapper content-wrapper" id="design">
-        <div class="design-wrapper content">
-            <img src="https://i.imgur.com/1UzLRhU.png">
-        </div>
-        <div class="design-wrapper content">
-            <img src="https://i.imgur.com/uK4UL2i.png">
-        </div>
-        <div class="design-wrapper content">
-            <img src="https://i.imgur.com/hUdTiOJ.png">
-        </div>
+        {% for design in site.posts %} {% if design.layout == "design" %}
+            <div class="design-wrapper content">
+                    <img src="{{design.thumbnail}}" alt="design">
+            </div>
+        {% endif %} {% endfor %}
     </div>
     <div class="seperator"></div>
     <div class=" logos-wrapper content-wrapper" id="logo">
-        <div class="logo-wrapper content">
-            <img src="https://cdn.dribbble.com/users/1764407/screenshots/4133583/t.png">
-        </div>
-        <div class="logo-wrapper content">
-            <img src="https://cdn.dribbble.com/users/1764407/screenshots/4598275/day001.png">
-        </div>
-        <div class="logo-wrapper content">
-            <img src="https://cdn.dribbble.com/users/1764407/screenshots/4603904/day003.png">
-        </div>
-        <div class="logo-wrapper content">
-            <img src="https://cdn.dribbble.com/users/1764407/screenshots/4668942/abhi.png">
-        </div>
-        <div class="logo-wrapper content">
-            <img src="https://cdn.dribbble.com/users/1764407/screenshots/4134501/f.png">
-        </div>
-        <div class="logo-wrapper content">
-            <img src="https://cdn.dribbble.com/users/1764407/screenshots/4608050/day004.png">
-        </div>
-        <div class="logo-wrapper content">
-            <img src="https://cdn.dribbble.com/users/1764407/screenshots/4598292/day002.png">
-        </div>
-        <div class="logo-wrapper content">
-            <img src="https://cdn.dribbble.com/users/1764407/screenshots/4679235/hantz.png">
-        </div>
-        <div class="logo-wrapper content">
-            <img src="https://cdn.dribbble.com/users/1764407/screenshots/4133548/test.png">
-        </div>
-        
+         {% for logo in site.posts %} {% if logo.layout == "logo" %}
+            <div class="logo-wrapper content">
+                    <img src="{{logo.thumbnail}}" alt="logo">
+            </div>
+        {% endif %} {% endfor %}
     </div>
     <div class="seperator"></div>
     <div class="content-wrapper info-wrapper">
@@ -98,6 +75,7 @@ title: home
             });
         }
     </script>
+    <script src="scripts/main.js"></script>
           
     
 </div>
