@@ -25,6 +25,7 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "logo"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Category", name: "title", widget: "hidden", category: "logo"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Image", name: "thumbnail", widget: "image"}
   - name: "design" # Used in routes, e.g., /admin/collections/blog
@@ -33,7 +34,8 @@ collections:
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - {label: "Layout", name: "layout", widget: "hidden", default: "logo"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "design"}
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Category", name: "title", widget: "hidden", category: "design"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Image", name: "thumbnail", widget: "image"}
