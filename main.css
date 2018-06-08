@@ -203,8 +203,6 @@ body {
 
 .design-page {
   width: 65%;
-  display: flex;
-  flex-direction: column;
 }
 
 .design-page div {
@@ -231,11 +229,14 @@ body {
 }
 
 .design-page .description-wrapper {
+  opacity: 0;
   font-size: 12pt;
 }
 
 .design-page .url-wrapper {
+  opacity: 0;
   font-size: 12pt;
+  margin-bottom: 20px;
 }
 
 .design-page img {
