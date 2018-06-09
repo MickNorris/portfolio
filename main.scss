@@ -114,7 +114,6 @@ body{
     align-items: center;
     flex: auto;
     margin: 10px 10px;
-    min-width: 250px;
     cursor: pointer;
     filter: grayscale(100%);
     transition: all ease 0.3s;
@@ -155,7 +154,7 @@ body{
     width: 100%;
     height: 30px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     margin-bottom: 30px;
 }
@@ -163,7 +162,7 @@ body{
 .svg-wrapper{
     width: 30px;
     height: 30px;
-    margin: 0px 50px;
+    //margin: 0px 50px;
     fill: #4f4f4f;
     transition: all ease 0.3s;
     &:hover{
@@ -256,5 +255,49 @@ body{
     to{
         transform: translateY(0px);
         opacity: 1;
+    }
+}
+
+
+
+@media (max-width: 600px){
+    .home-wrapper{
+        width: 90%;
+    }
+
+    .content{
+        height: auto;
+    }
+
+    .design-page{
+        width: 90%;
+    }
+    
+}
+
+@media (max-width: 800px){
+    .info-wrapper{
+        span{
+            width: 90%;
+        }
+    }
+
+    .svg-wrapper{
+        margin: 0px 10px;
+    }
+
+    
+}
+
+@media (max-width: 1200px){
+    .fullscreen-logo{
+       img{
+           width: 90%;
+           height: auto;
+       } 
+    }
+
+    .image-wrapper{
+        height: auto !important;
     }
 }
