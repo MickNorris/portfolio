@@ -9,11 +9,17 @@ body, html {
   overflow-x: hidden;
 }
 
+#wrap {
+  width: 100%;
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+}
+
 body {
   display: flex;
   justify-content: center;
-  width: 100vw;
-  height: 100vh;
 }
 
 .home-wrapper {
@@ -37,8 +43,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0;
-  animation: fadein 1s ease 0s forwards;
 }
 
 .header nav {
@@ -149,12 +153,14 @@ body {
 }
 
 .contact-wrapper {
-  width: 100%;
+  width: 50%;
   height: 30px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
+  margin-top: 50px;
+  padding: 0px 10px;
 }
 
 .svg-wrapper {
@@ -201,15 +207,13 @@ body {
 
 .design-page {
   width: 65%;
-}
-
-.design-page div {
-  animation: fadein 1s ease 0.5s forwards;
+  /*nav{
+        margin: 0;
+    }*/
 }
 
 .design-page .image-wrapper {
-  opacity: 0;
-  box-sizing: content-box;
+  box-sizing: border-box;
   box-shadow: 1px 0px 7px black;
   display: flex;
   align-items: center;
@@ -219,20 +223,22 @@ body {
   overflow: hidden;
 }
 
+.design-page .design-content {
+  margin: 0px 10px;
+  opacity: 0;
+  animation: fadein 1s ease 0.5s forwards;
+}
+
 .design-page .title-wrapper {
   margin-top: 40px;
-  opacity: 0;
-  animation: fadein 1s ease 0.6s forwards;
   font-size: 20pt;
 }
 
 .design-page .description-wrapper {
-  opacity: 0;
   font-size: 12pt;
 }
 
 .design-page .url-wrapper {
-  opacity: 0;
   font-size: 12pt;
   margin-bottom: 20px;
 }
@@ -272,12 +278,18 @@ body {
   .svg-wrapper {
     margin: 0px 10px;
   }
+  .contact-wrapper {
+    width: 80%;
+  }
 }
 
 @media (max-width: 1200px) {
   .fullscreen-logo img {
     width: 90%;
     height: auto;
+  }
+  .info-wrapper span {
+    width: 90%;
   }
   .image-wrapper {
     height: auto !important;

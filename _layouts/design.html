@@ -3,11 +3,15 @@
 
 <div class="design-page">
     {% include header.html %}
-    <div class="image-wrapper">
-            <img src="{{page.thumbnail}}"/>
+    <div class="design-content">
+        <div class="image-wrapper">
+                <img src="{{page.thumbnail}}"/>
+        </div>
+        <div class="title-wrapper info">{{page.title}}</div>
+        <div class="separator"></div>
+        <div class="description-wrapper info">{{content}}</div>
+        <div class="url-wrapper info"><a href="{{page.pageURl}}">Link to site</a></div>
     </div>
-    <div class="title-wrapper info">{{page.title}}</div>
-    <div class="separator"></div>
-    <div class="description-wrapper info">{{content}}</div>
-    <div class="url-wrapper info"><a href="{{page.pageURl}}">Link to site</a></div>
 </div>
+
+{% include footer.html %}
