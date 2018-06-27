@@ -12,6 +12,10 @@
     <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% if site.google_analytics and jekyll.environment == 'production' %}
+    {% include analytics.html %}
+    {% endif %}
+
 </head>
 <body>
 <div id="wrap">
