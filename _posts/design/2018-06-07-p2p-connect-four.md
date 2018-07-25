@@ -1,8 +1,8 @@
 ---
 layout: design
-title: P2P Connect Four
-pageURl: 'http://connect-with-friends.herokuapp.com/'
-date: '2018-06-07T10:26:55-04:00'
-thumbnail: /images/uploads/connect.png
+title: Poke Sushi Bowl
+pageURl: 'http://pokesushibowl.com/'
+date: '2018-07-24T07:26:55-07:00'
+thumbnail: /images/uploads/image1351.png
 ---
-This is a P2P-schemed connect 4 game that I made using angular.
+Website for a client that owns a restaurant named Poke Sushi Bowl where you can get authentic Hawaiian cuisine.
