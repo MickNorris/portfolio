@@ -1,7 +1,7 @@
 ---
 layout: logo
-title: Partify Mockup
+title: Bus App Mockup
 date: '2018-08-02T20:27:09-04:00'
-thumbnail: /images/uploads/partify.png
+thumbnail: /images/uploads/bus-mockup.png
 ---
 
