@@ -1,8 +1,8 @@
 ---
 layout: design
-title: '"Black Boy" Analysis'
-pageURl: 'http://eng254-wright.netlify.com/'
+title: Connect 4
+pageURl: 'http://connect-with-friends.herokuapp.com/#!/'
 date: '2018-06-07T10:29:09-04:00'
-thumbnail: /images/uploads/black-boy.png
+thumbnail: /images/uploads/connect.png
 ---
-This is a book analysis I did for my ENG 254 class. I decided to analyze Richard Wright's Book titled _Black Boy_.
+This is a connect 4 game I made over spring break of 2017. It was made to emulate P2P communications over the web by using sockets to connect two players together. It is hosted for free on heroku, which disables the site while there is no traffic. If you are the first to visit after a certain amount of time, it will take a while to load.
