@@ -1,7 +1,7 @@
 ---
 layout: design
 title: Rock Paper Scissors AI
-pageURl: 'http://www.nickmorris.life/'
+pageURl: 'https://rps-fun.netlify.com/'
 date: '2020-02-20T15:39:30-05:00'
 thumbnail: /images/uploads/rps_demo.png
 ---
