@@ -8,7 +8,37 @@ title: home
 </div>
 
 <div class="home-wrapper">
-    {% include header.html %}
+    <div class="content-wrapper info-wrapper">
+        
+        <div class="bio-picture-wrapper">
+        {% for logo in site.posts %} 
+        {% if logo.layout == "logo" %}
+        {% if logo.title == "Personal 2" %}
+            <img src="{{logo.thumbnail}}" alt="logo">
+        {% endif %}
+        {% endif %} 
+        {% endfor %}
+        </div>
+
+        <div class="bio-wrapper">
+            <span><b>Hello!</b></span>
+            <span></span>
+            <span>My name is Nick Morris</span>
+            <span>
+                I build weird web projects and design cool designs. If you want to make something cool with me 
+                reach out to me on one of the social medias below. Here are a few of my favorite projects:
+            </span>
+            <ul>
+                <li><a href="https://github.com/MickNorris/jmu-citations-web">Live parking citation data from JMU</a></li>
+                <li><a href="https://rps-fun.netlify.com/">Play Rock Paper Scissors with a bot</a></li>
+                <li><a href="https://github.com/MickNorris/venmo-begging">Venmo bot that made me $5 and banned</a></li>
+                <li><a href="https://github.com/MickNorris/Connect-With-Friends">Play Connect 4 with your friends</a></li>
+            </ul>
+        </div>
+
+    </div>
+    {% include footer.html %}
+    <div class="seperator"></div>
     <div class="designs-wrapper content-wrapper" id="design">
         {% for design in site.posts %} {% if design.layout == "design" %}
             <div class="design-wrapper content">
@@ -16,7 +46,6 @@ title: home
             </div>
         {% endif %} {% endfor %}
     </div>
-    <div class="seperator"></div>
     <div class="logos-wrapper content-wrapper" id="logo">
          {% for logo in site.posts %} {% if logo.layout == "logo" %}
             <div class="logo-wrapper content">
@@ -25,14 +54,7 @@ title: home
         {% endif %} {% endfor %}
     </div>
     <div class="seperator"></div>
-    <div class="content-wrapper info-wrapper">
-        <span>about me</span>
-        <span>Hello! My name is Nick Morris and I am a freelance web designer and developer in the DC/Metro area. Aside from web development I also do logo design</span>
-        <span>I have skills in Logo Design, Web Design, git, github, CSS3, HTML5, JS, Wordpress, React, AngularJS, Firebase, and Bootstrap</span>
-        <span>If you'd like to get into contact with me feel free to message me on one of my social medias below or send me an email at morri2ne@dukes.jmu.edu!  I am open for business</span>
-        <span>Current Logo Price Range: <b>$200 - $400.</b></span>
-        <span>Unfortunately due to my schedule, I am not currently doing any websites. Sorry if this is an inconvenience.</span>
-    </div>
+    
     <!--
     <div class="form-wrapper content-wrapper">
         <form action="https://formspree.io/nicholasmrnickmorris@gmail.com"
